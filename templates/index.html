@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Daily News</title>
+  </head>
+  <body>
+    <h1>Daily News!</h1>
+    <h2>매일 매일 뉴스를 받아보세요!</h2>
+    <form action="http://localhost:{{data}}/QuestionLog" method="POST">
+      개인정보를 입력해주세요!
+      <p>이름: <input type="text" name="이름" /></p>
+      <p>연락처: <input type="text" name="연락처" /></p>
+      <p>이메일: <input type="text" name="이메일" /></p>
+
+      <p><input type="submit" value="제출" /></p>
+    </form>
+
+    <h2>ChatGPT에게 물어보세요!</h2>
+    <form action="http://localhost:{{data}}/ChatGPT" method="POST">
+      ChatGPT에게 물어보세요!
+      <p>질문: <input type="text" name="질문" /></p>
+      <p><input type="submit" value="질문하기" /></p>
+    </form>
+  </body>
+</html>

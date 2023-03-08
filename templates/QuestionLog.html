@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>답변!</h1>
+    <table border="2">
+      {% for key, value in result.items() %}
+      <tr>
+        <th>{{ key }}</th>
+        <td>"___{{ value }}___"</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
